@@ -28,12 +28,12 @@ end
 
 function onWaveOut(  )
     myo.debug("Next")
-    myo.keyboard("alt", "press", "tab")
+    myo.keyboard("right_arrow", "press")
 end
 
 function onWaveIn(  )
    myo.debug("Previous") 
-   myo.keyboard("alt", "press", "shift")
+   myo.keyboard("left_arrow", "press")
 end
 
 function onFist(  )
@@ -42,13 +42,14 @@ function onFist(  )
 end
 
 function onFingersSpread(  )
-    myo.debug("Escape")
-    myo.keyboard("escape", "press")
+    myo.debug("Windows")
+    myo.keyboard("tab", "down", "alt")
 end
 
 function onDoubleTap( )
     myo.debug("Lock Windows")
-    myo.keyboard("left_win", "press", "l")
+    myo.keyboard("left_win", "down")
+    myo.keyboard("l", "press")
 end
 
 function onRest( )
